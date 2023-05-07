@@ -32,7 +32,7 @@
                         <div class="col-lg-6">
                             <div class="p-5">
                                 <div class="mb-5">
-                                                                  <a class="navbar-brand d-flex align-items-center" href="index.html"><span class="bs-icon-sm bs-icon-rounded bs-icon-primary d-flex justify-content-center align-items-center me-2 bs-icon"><svg class="bi bi-text-indent-left" xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" viewBox="0 0 16 16" style="padding-right: 0px;margin-right: 0px;font-size: 27px;">
+                                                                  <a class="navbar-brand d-flex align-items-center" href="home.blade.php"><span class="bs-icon-sm bs-icon-rounded bs-icon-primary d-flex justify-content-center align-items-center me-2 bs-icon"><svg class="bi bi-text-indent-left" xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" viewBox="0 0 16 16" style="padding-right: 0px;margin-right: 0px;font-size: 27px;">
             <path d="M2 3.5a.5.5 0 0 1 .5-.5h11a.5.5 0 0 1 0 1h-11a.5.5 0 0 1-.5-.5zm.646 2.146a.5.5 0 0 1 .708 0l2 2a.5.5 0 0 1 0 .708l-2 2a.5.5 0 0 1-.708-.708L4.293 8 2.646 6.354a.5.5 0 0 1 0-.708zM7 6.5a.5.5 0 0 1 .5-.5h6a.5.5 0 0 1 0 1h-6a.5.5 0 0 1-.5-.5zm0 3a.5.5 0 0 1 .5-.5h6a.5.5 0 0 1 0 1h-6a.5.5 0 0 1-.5-.5zm-5 3a.5.5 0 0 1 .5-.5h11a.5.5 0 0 1 0 1h-11a.5.5 0 0 1-.5-.5z"></path>
         </svg></span><span id="logo">Informia</span></a> 
                                 </div>
@@ -41,14 +41,6 @@
                                 <p class="text-muted mt-2 mb-5">Sign up to learn new skills and advance your career with Informia.</p>
                                 <form>
                                     <div class="form-group">
-                                        <label for="firstname">First Name</label>
-                                        <input type="text" class="form-control" id="firstname" />
-                                    </div>
-                                     <div class="form-group">
-                                        <label for="lastname">Last Name</label>
-                                        <input type="text" class="form-control" id="lastname" />
-                                    </div>
-                                    <div class="form-group">
                                         <label for="exampleInputEmail1">Email address</label>
                                         <input type="email" class="form-control" id="Email" />
                                     </div>
@@ -56,10 +48,7 @@
                                         <label for="Password">Password</label>
                                         <input type="password" class="form-control" id="Password" />
                                     </div>
-                                    <div class="form-group mb-5">
-                                        <label for="ConfirmPassword">Confirm Password</label>
-                                        <input type="password" class="form-control" id="ConfirmPassword" />
-                                    </div>
+
                                     <button type="submit" class="btn btn-theme">Register</button>
                                 </form>
                             </div>
@@ -79,7 +68,7 @@
                 <!-- end card-body -->
             </div>
             <!-- end card -->
-            <p class="text-muted text-center mt-3 mb-0">Already have an account? <a href="signIn.html" class="text-primary ml-1">login</a></p>
+            <p class="text-muted text-center mt-3 mb-0">Do not have an account? <a href="signUp.html" class="text-primary ml-1">sign up</a></p>
             <!-- end row -->
         </div>
         <!-- end col -->
