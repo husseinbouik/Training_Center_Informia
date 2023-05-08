@@ -5,9 +5,13 @@ namespace App\Models;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 
+namespace App\Models;
+
+use Illuminate\Database\Eloquent\Model;
+
 class Learner extends Model
 {
-    use HasFactory;
+    protected $table = 'learner';
 
     protected $fillable = [
         'first_name',
@@ -15,9 +19,5 @@ class Learner extends Model
         'email',
         'password',
     ];
-
-    public function getFullNameAttribute()
-    {
-        return [$this->first_name, $this->last_name];
-    }
 }
+

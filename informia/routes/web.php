@@ -16,10 +16,9 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     return view('welcome');
 });
-Route::get('/', 'HomeController@index');
+// Route::get('/', 'HomeController@index');
 Route::get('/signin', 'AuthController@signin');
-Route::get('/signin', 'AuthController@signin');
-Route::get('/signup', 'AuthController@signup');
+Route::get('/signup', 'RegisterController@store')->name('signup');
 Route::get('/profile', 'ProfileController@index');
 Route::get('/trainings', 'TrainingController@index');
 Route::get('/detailtraining/{id}', 'DetailTrainingController@detail');

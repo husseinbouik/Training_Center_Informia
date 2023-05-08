@@ -21,6 +21,7 @@
     <link rel="stylesheet" href="assets/css/Search-Input-Responsive-with-Icon.css">
     <link rel="stylesheet" href="assets/css/Search-Input-responsive.css">
     <link rel="stylesheet" href="assets/css/Signup-page-with-overlay.css">
+    <link rel="stylesheet" href="assets/css/sign.css">
 </head>
 
 <body style="padding-top: 0px;padding-bottom: 65px;"><div id="main-wrapper" class="container">
@@ -39,14 +40,20 @@
 
                                 <h6 class="h5 mb-0">Just Do Register.</h6>
                                 <p class="text-muted mt-2 mb-5">Sign up to learn new skills and advance your career with Informia.</p>
-                                <form>
+                                <form action="login.php" method="post"  id="form" class="form" enctype="multipart/form-data">
                                     <div class="form-group">
                                         <label for="exampleInputEmail1">Email address</label>
                                         <input type="email" class="form-control" id="Email" />
+                                        <i class="fas fa-check-circle"></i>
+                                        <i class="fas fa-exclamation-circle"></i>
+                                        <small>Error message</small>
                                     </div>
                                     <div class="form-group">
                                         <label for="Password">Password</label>
                                         <input type="password" class="form-control" id="Password" />
+                                        <i class="fas fa-check-circle"></i>
+                                        <i class="fas fa-exclamation-circle"></i>
+                                        <small>Error message</small>
                                     </div>
 
                                     <button type="submit" class="btn btn-theme">Register</button>
@@ -68,7 +75,7 @@
                 <!-- end card-body -->
             </div>
             <!-- end card -->
-            <p class="text-muted text-center mt-3 mb-0">Do not have an account? <a href="signUp.html" class="text-primary ml-1">sign up</a></p>
+            <p class="text-muted text-center mt-3 mb-0">Do not have an account? <a href="signup.blade.php" class="text-primary ml-1">sign up</a></p>
             <!-- end row -->
         </div>
         <!-- end col -->
@@ -77,6 +84,7 @@
 </div>
     <script src="assets/bootstrap/js/bootstrap.min.js"></script>
     <script src="assets/js/bs-init.js"></script>
+    <script src="assets/js/signIn.js"></script>
     <script src="https://geodata.solutions/includes/countrystate.js"></script>
 </body>
 

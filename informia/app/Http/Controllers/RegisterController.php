@@ -4,36 +4,28 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Models\Learner;
-
+use Illuminate\Support\Facades\DB;
+use App\Http\Requests\RegistrationRequest;
+use App\User;
 
 class RegisterController extends Controller
 {
-    public function __construct()
-    {
-        $this->middleware('guest');
+     public function create()
+        {
+            return view('signup.blade.php');
+        }
+    
+        public function store(RegistrationRequest $request)
+        {
+            $user = new Learner();
+            $user->name = $request->name;
+            $user->email = $request->email;
+            $user->password = bcrypt($request->password);
+            $user->save();
+    
+            return redirect()->route('home');
+        }
     }
+    
 
-    public function index()
-    {
-        return view('auth.register');
-    }
 
-    public function store(Request $request)
-    {
-        $this->validate($request, [
-            'first_name' => 'required|string|max:255',
-            'last_name' => 'required|string|max:255',
-            'email' => 'required|string|email|max:255|unique:learners',
-            'password' => 'required|string|min:6|confirmed',
-        ]);
-
-        $learner = new Learner();
-        $learner->first_name = $request->first_name;
-        $learner->last_name = $request->last_name;
-        $learner->email = $request->email;
-        $learner->password = bcrypt($request->password);
-        $learner->save();
-
-        return redirect()->route('home')->with('success', 'Your account has been created.');
-    }
-}

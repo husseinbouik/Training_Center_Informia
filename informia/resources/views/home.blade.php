@@ -38,7 +38,7 @@
                     <li class="nav-item"><a class="nav-link" href="#FAQ">FAQ</a></li>
                     <li class="nav-item"><a class="nav-link" href="#ContactUs">Contact Us</a></li>
                 </ul>
-                <div class="d-none d-md-block" style="margin-left: -2px;margin-right: -30px;"><a class="btn btn-primary" role="button" data-bss-hover-animate="rubberBand" id="signupbtn" href="signUp.html" style="margin: 5px;">Sign Up</a><a class="btn btn-primary" role="button" data-bss-hover-animate="rubberBand" href="signIn.html" style="margin: 5px;">Sign In</a></div>
+                <div class="d-none d-md-block" style="margin-left: -2px;margin-right: -30px;"><a class="btn btn-primary" role="button" data-bss-hover-animate="rubberBand" id="signupbtn" href="signup.blade.php" style="margin: 5px;">Sign Up</a><a class="btn btn-primary" role="button" data-bss-hover-animate="rubberBand" href="signin.blade.php" style="margin: 5px;">Sign In</a></div>
             </div>
         </div>
     </nav>
@@ -48,7 +48,7 @@
                 <div class="row h-100">
                     <div class="col-md-6 text-center text-md-start d-flex d-sm-flex d-md-flex justify-content-center align-items-center justify-content-md-start align-items-md-center justify-content-xl-center">
                         <div style="max-width: 350px;">
-                            <h1 class="text-uppercase fw-bold" style="width: 455px;padding-left: 18px;margin-left: -18px;padding-right: 84px;margin-right: 120px;"><br><strong><span style="color: rgb(31, 31, 31);">Informia: The world's leading provider of online training solutions.</span></strong><br><br></h1><a class="btn btn-primary btn-lg me-2" role="button" data-bss-hover-animate="rubberBand" href="signUp.html" style="background-color: #ee4a6d;border: none;">Register Now !</a>
+                            <h1 class="text-uppercase fw-bold" style="width: 455px;padding-left: 18px;margin-left: -18px;padding-right: 84px;margin-right: 120px;"><br><strong><span style="color: rgb(31, 31, 31);">Informia: The world's leading provider of online training solutions.</span></strong><br><br></h1><a class="btn btn-primary btn-lg me-2" role="button" data-bss-hover-animate="rubberBand" href="signup.blade.php" style="background-color: #ee4a6d;border: none;">Register Now !</a>
                         </div>
                     </div>
                 </div>
