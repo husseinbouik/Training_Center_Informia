@@ -34,16 +34,16 @@
             <div class="collapse navbar-collapse" id="navcol-1">
                 <ul class="navbar-nav mx-auto">
                     <li class="nav-item"></li>
-                    <li class="nav-item"><a class="nav-link" href="trainings.html"><i class="fa fa-th-large fa-fw"></i>Trainings</a></li>
+                    <li class="nav-item"><a class="nav-link" href="trainings.blade.php"><i class="fa fa-th-large fa-fw"></i>Trainings</a></li>
                     <li class="nav-item"></li>
                     <li class="nav-item"></li>
                     <li class="nav-item"></li>
                     <li class="nav-item dropdown"><a class="dropdown-toggle nav-link" aria-expanded="false" data-bs-toggle="dropdown" href=""><i class="fa fa-navicon fa-fw"></i><span style="color: var(--bs-navbar-active-color);">Registrations</span></a>
-                        <div class="dropdown-menu"><a class="dropdown-item" href="recents.html"><i class="fa fa-spinner fa-fw"></i>Recents</a><a class="dropdown-item" href="archieve.html"><i class="fa fa-archive fa-fw"></i>Archieve</a></div>
+                        <div class="dropdown-menu"><a class="dropdown-item" href="recents.blade.php"><i class="fa fa-spinner fa-fw"></i>Recents</a><a class="dropdown-item" href="archive.blade.php"><i class="fa fa-archive fa-fw"></i>Archieve</a></div>
                     </li>
                 </ul>
                 <div class="dropdown no-arrow"><a class="dropdown-toggle nav-link" aria-expanded="false" data-bs-toggle="dropdown" href="#"><span class="d-none d-lg-inline me-2 text-gray-600 small">hussein bouik</span><img class="border rounded-circle img-profile" src="assets/img/avatars/avatar5.jpeg"></a>
-                    <div class="dropdown-menu shadow dropdown-menu-end animated--grow-in"><a class="dropdown-item" href="profil.html"><i class="fas fa-user fa-sm fa-fw me-2 text-gray-400"></i>&nbsp;Profile</a><a class="dropdown-item" href="#"><i class="fas fa-cogs fa-sm fa-fw me-2 text-gray-400"></i>&nbsp;Settings</a><a class="dropdown-item" href="#"><i class="fas fa-list fa-sm fa-fw me-2 text-gray-400"></i>&nbsp;Activity log</a>
+                    <div class="dropdown-menu shadow dropdown-menu-end animated--grow-in"><a class="dropdown-item" href="profile.blade.php"><i class="fas fa-user fa-sm fa-fw me-2 text-gray-400"></i>&nbsp;Profile</a><a class="dropdown-item" href="#"><i class="fas fa-cogs fa-sm fa-fw me-2 text-gray-400"></i>&nbsp;Settings</a><a class="dropdown-item" href="#"><i class="fas fa-list fa-sm fa-fw me-2 text-gray-400"></i>&nbsp;Activity log</a>
                         <div class="dropdown-divider"></div><a class="dropdown-item" href="#"><i class="fas fa-sign-out-alt fa-sm fa-fw me-2 text-gray-400"></i>&nbsp;Logout</a>
                     </div>
                 </div>
