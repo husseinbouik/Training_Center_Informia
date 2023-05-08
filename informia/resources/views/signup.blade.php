@@ -41,7 +41,7 @@
 
                                 <h6 class="h5 mb-0">Just Do Register.</h6>
                                 <p class="text-muted mt-2 mb-5">Sign up to learn new skills and advance your career with Informia.</p>
-                                <form action="{{ route('register') }}" method="post"  id="form" class="form"  >
+                                ```<form action="{{ route('register') }}" method="post"  id="form" class="form"  >
                                     @csrf
                                    <div class="form-group">
                                         <label for="firstname">First Name</label>
@@ -49,7 +49,7 @@
                                         <small>Error message</small>
                                     </div>
                                      <div class="form-group">
-                                        <label for="lastname">Last Name</label>
+                                        <label for="last_name">Last Name</label>
                                         <input type="text" class="form-control" id="lastname" />
                                         <small>Error message</small>
                                     </div>
@@ -69,7 +69,7 @@
                                         <small>Error message</small>
                                     </div>
                                     <button type="submit" class="btn btn-theme" value="Register" >Register</button>
-                                </form>
+                                </form>```
                             </div>
                         </div>
                         <div class="col-lg-6 d-none d-lg-inline-block">
