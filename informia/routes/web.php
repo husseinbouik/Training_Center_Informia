@@ -13,23 +13,26 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+
+
 // Route::get('/', 'HomeController@index');
 Route::get('/signin', 'AuthController@signin');
-Route::get('/signup', 'RegisterController@store')->name('signup');
+Route::get('/signup', 'RegisterController@store');
 Route::get('/profile', 'ProfileController@index');
 Route::get('/trainings', 'TrainingController@index');
 Route::get('/detailtraining/{id}', 'DetailTrainingController@detail');
 Route::get('/archive', 'ArchiveController@index');
 Route::get('/recents', 'RecentsController@index');
+
+Route::get('/', function () {
+    return view('welcome');
+});
 Route::get('/signin', function () {
     return view('signin');
 });
 
 Route::get('/signup', function () {
-    return view('signup');
+    return view('training');
 });
 
 Route::get('/profile', function () {
